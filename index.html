@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sadman Form Validation</title>
+  <link rel="icon" href="images/fav.png">
+  <!-- font links -->
+  <!-- css links -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <form>
+     
+  <form class="row g-3">
+    
+    <div class="col-md-4">
+     <label for="Validation_first" class="form-label">First Name</label>
+     <input type="text" name="Validation_first" id="Validation_first" class="form-control" value="Enter your first Name" required>
+    </div>
+     
+    <div class="col-md-4">
+     <label for="Validation_last" class="form-label">Last Name</label>
+     <input type="text" name="Validation_last" id="Validation_last" class="form-control" value="Enter your last Name" required>
+    </div>
+   
+   <div class="col-md-4">
+     <label for="validation_user" class="form-label">Enter your uesr id</label>
+     <div class="input-group">
+        <span class="input-group-text" id="prepand">@</span>
+        <input type="text" class="form-control" id="validation_user" aria-describedby="prepand" required>
+     </div>
+   </div>
+    <div class="mb-3">
+      <label for="textarea" class="form-label">Your Meassage</label>
+      <textarea class="form-control" id="textarea" rows="3"></textarea>
+    </div>
+    
+    <div class="mb-3">
+      <label for="file" class="form-label">Attach your file</label>
+      <input type="file" class="form-control" id="fie" name="file">
+    
+    
+    <div class="mb-3">
+      <label for="option" class="form-label">Choose your blood group</label>
+      <input type="" name="option" id="option" class="form-control" list="datalistoptions" placeholder="Select your Blood Group">
+      <datalist id="datalistoptions">
+        <option value="A+">
+        <option value="B+">
+        <option value="AB-">
+        <option value="AB-">
+      </datalist>
+    </div>
+    <div class="mb-3">
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Option Menu</option>
+        <option value="1">one</option>
+        <option value="2">two</option>
+        <option value="3">three</option>
+        <option value="4">four</option>
+      </select>
+    </div>
+    <div class="form-floating mb-3" >
+      <input type="email" id="floating_email" name="floating_email" class="form-control" placeholder="name@example.com">
+      <label for="floating_email">Email Address</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" name="float_password" class="form-control" id="float_password" placeholder="password">
+      <label for="float_password">Password</label>
+    </div>
+  </form>
+  <br>
+  
+  
+
+   <div class="col-12">
+     <div class="form-check">
+       <input type="checkbox" name="check" id="check" class="form-check-input" required>
+       <label for="check" class="form-check-label">Agree to terms & conditions</label>
+      </div>
+   </div>
+   
+   <div class="col-12">
+      <button type="Submit" class="btn btn-primary">Submit</button>
+   </div>
+  
+  </form>
+
+ 
+
+  
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
